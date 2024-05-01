@@ -1,0 +1,21 @@
+<html>
+<title>MPH to KPH Speed Converter</title>
+<body>
+
+<h1>Speed Converter</h1>
+
+<p>
+  <button id="myBtn" onclick="moneyConverter(valNum)">Ex change</button>
+  <label>USD</label>
+  <input id="inputUSD" type="number" placeholder="USD" oninput="moneyConverter(this.value)" onchange="moneyConverter(this.value)">
+</p>
+<p>RWF:<span id="outputRWF"></span></p>
+
+<script>
+function moneyConverter(valNum) {
+  document.getElementById("outputRWF").innerHTML=valNum*1300;
+}
+</script>
+
+</body>
+</html>

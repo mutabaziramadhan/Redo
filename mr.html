@@ -1,0 +1,23 @@
+
+<html>
+<title>USD to RWF Converter</title>
+<body>
+
+<h1>Exchange</h1>
+
+<p>
+  <button id="myBtn" onclick="moneyConverter(valNum)">Ex change</button>
+  <label>USD</label>
+  <input id="inputUSD" type="number" placeholder="USD" oninput="moneyConverter(this.value)" onchange="moneyConverter(this.value)">
+</p>
+<p>RWF:<span id="outputRWF" oninput="RWF"></span></p>
+<button type="button"onclick="function moneyConverter(valNum)"></button>
+
+<script>
+function moneyConverter(valNum) {
+  document.getElementById("outputRWF").innerHTML=valNum*1300;
+}
+</script>
+
+</body>
+</html>

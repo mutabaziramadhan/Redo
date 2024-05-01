@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>MPH to KPH Speed Converter</title>
+<body>
+
+<h2>Speed Converter</h2>
+<p>Type a value in the MPH field to convert the value to KPH:</p>
+
+<p>
+  <label>USD</label>
+  <input id="inputUSD" type="number" placeholder="USD" oninput="moneyConverter(this.value)" onchange="moneyConverter(this.value)">
+</p>
+<p>FRW: <span id="outputKPH"></span></p>
+
+<script>
+function speedConverter(valNum) {
+  document.getElementById("outputKPH").innerHTML=valNum*1300;
+}
+</script>
+
+</body>
+</html>
